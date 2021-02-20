@@ -1,3 +1,4 @@
+package Principal;
 /**
 	 * @author Jonas Artieda Medina
 	 * clase para realizar diversas operaciones, comprobar si un numero es primo o no, 

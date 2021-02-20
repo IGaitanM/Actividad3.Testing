@@ -1,3 +1,4 @@
+package Principal;
 /**
  * Clase de la calculadora para realizar operaciones de multiplicación.
  * 
