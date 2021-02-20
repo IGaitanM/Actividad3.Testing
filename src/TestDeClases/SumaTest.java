@@ -1,0 +1,14 @@
+package TestDeClases;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class SumaTest {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}
