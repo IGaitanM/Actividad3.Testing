@@ -1,4 +1,4 @@
-package Principal;
+package principal;
 /**
 	 * Clase 1: Suma. Esta clase implementa todos los métodos que están relacionados con la sumas de la calculadora.
 	 * 

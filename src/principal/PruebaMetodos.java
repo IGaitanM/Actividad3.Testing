@@ -1,4 +1,4 @@
-package Principal;
+package principal;
 public class PruebaMetodos {
 
 	public static void main(String[] args) {

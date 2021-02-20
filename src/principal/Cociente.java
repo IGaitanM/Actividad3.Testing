@@ -1,4 +1,4 @@
-package Principal;
+package principal;
 /**
  * Clase para realizar operaciones de cocientes. (Los resultados que den números reales periódicos solo devolverán 16 decimales.)
  * 
