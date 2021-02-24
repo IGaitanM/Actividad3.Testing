@@ -14,7 +14,7 @@ public class ProductoTest {
 			Producto pro = new Producto();
 			double numReal1 = 3.4;
 			double numReal2 = 6.9;
-			double esperado = 10.3;
+			double esperado = 23.46;
 			// 2. ACT (Ejecutar)
 			double obtenido = pro.multiplicacionDosReales(numReal1, numReal2);
 			// 3. Assert (comprobar)
@@ -27,8 +27,8 @@ public class ProductoTest {
 			// 1. ARRANGED (preparar)
 			Producto pro = new Producto();
 			int numEnt1 = 555;
-			int numEnt2 = 333;
-			int esperado = 888;
+			int numEnt2 = 2;
+			int esperado = 1110;
 			// 2. ACT (Ejecutar)
 			int obtenido = pro.multiplicacionDosEnteros(numEnt1, numEnt2);
 			// 3. Assert (comprobar)
@@ -43,7 +43,7 @@ public class ProductoTest {
 				double numReal1= 27.3;
 				double numReal2= 5.03;
 				double numReal3= 1.2;
-				double esperado= 33.53;
+				double esperado= 164.7828;
 				// 2. ACT (Ejecutar)
 				double obtenido = pro.multiplicacionTresReales(numReal1, numReal2, numReal3);
 				// 3. Assert (comprobar)
