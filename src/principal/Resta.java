@@ -58,11 +58,12 @@ public class Resta {
  * 4. Método para acumular los valores introducidos @restaValoresMetidos
  * 
  * @param numLeido
- * @return Devuelve la suma de los resultados restados.
+ * @return Devuelve la resta de los numeros acumulados.
+ * EL primero numero acumulado es negativo
  */
 	
 	public int restaValoresMetidos(int numLeido) {
-			acumulado += numLeido;
+			acumulado -= numLeido;
 
 			return acumulado;
 		}

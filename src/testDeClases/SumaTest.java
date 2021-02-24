@@ -1,6 +1,7 @@
 package testDeClases;
 
 import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;
 
@@ -8,7 +9,7 @@ import principal.Suma;
 
 public class SumaTest {
 
-	
+
 	// Test método SumaDosReales
 		
 			@Test
@@ -16,8 +17,8 @@ public class SumaTest {
 				// 1. ARRANGED (preparar)
 				Suma sum = new Suma();
 				double numReal1 = 2.5;
-				double numReal2 = 3.55;
-				double esperado = 6.05;
+				double numReal2 = 3.5;
+				double esperado = 6;
 				// 2. ACT (Ejecutar)
 				double obtenido = sum.sumaDosReales(numReal1, numReal2);
 				// 3. Assert (comprobar)
@@ -71,6 +72,7 @@ public class SumaTest {
 				assertEquals(esperado1, obtenido1);
 				assertEquals(esperado2, obtenido2);
 			}
+
 
 
 }
