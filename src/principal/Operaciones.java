@@ -57,7 +57,7 @@ public class Operaciones {
 	return contador2-1; 
 }
 	/**
-	 * Método obtener el porcentaje de dos números reales.
+	 * Método obtener el porcentaje de un numero real.
 	 * @param numReal1 primer valor real para hacer la operación.
 	 * @param numReal2 segundo valor real para hacer la operación.
 	 * @return resultado devuelve el porcentaje del numero 1 respecto del número 2.
