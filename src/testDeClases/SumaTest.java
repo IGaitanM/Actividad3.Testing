@@ -64,7 +64,7 @@ public class SumaTest {
 				Suma sum = new Suma();
 				int numLeido = 2;
 				int esperado1 = 2;
-				int esperado2 = 0;
+				int esperado2 = 4;
 				// 2. ACT (Ejecutar)
 				int obtenido1 = sum.sumaValoresMetidos(numLeido);
 				int obtenido2 = sum.sumaValoresMetidos(numLeido);
@@ -73,6 +73,24 @@ public class SumaTest {
 				assertEquals(esperado2, obtenido2);
 			}
 
+						// TEST DE CASOS RAROS//
+			
+			
+			
+			
+			// Test sumar un valor negativo
 
-
+			@Test
+			public void sumaUnValorNegativoElResultadoEsUnaResta() {
+				// 1. ARRANGED (preparar)
+				Suma sum = new Suma();
+				double numReal1= -0.5;
+				double numReal2= 5.05;
+				double esperado= 4.55;
+				// 2. ACT (Ejecutar)
+				double obtenido = sum.sumaDosReales(numReal1, numReal2);
+				// 3. Assert (comprobar)
+				assertEquals(esperado,obtenido);
+			}
+			
 }

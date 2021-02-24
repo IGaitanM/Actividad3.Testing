@@ -30,6 +30,9 @@ public class Resta {
  * @param numEnt1 introducimos un numero real
  * @param numEnt2 introducimos un numero real
  * @return La resta de los dos numeros reales
+ * 
+ * Si se realiza la resta con un numero negativo se produce una suma 
+ * 
  */
 
 	public int restaDosEnteros (int numEnt1, int numEnt2) {
