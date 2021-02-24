@@ -38,7 +38,9 @@ public class RestaTest {
 		// 3. Assert (comprobar)
 		assertEquals(esperado, obtenido);
 	}
-
+	
+	
+			
 	// Test para el método RestaTresReales
 	@Test
 	public void RestaTresReales() {
@@ -60,8 +62,8 @@ public class RestaTest {
 		// 1. ARRANGED (preparar)
 		Resta res = new Resta();
 		int numLeido = 20;
-		int esperado1 = 20;
-		int esperado2 = 0;
+		int esperado1 = -20;
+		int esperado2 = -40;
 		// 2. ACT (Ejecutar)
 		int obtenido1 = res.restaValoresMetidos(numLeido);
 		int obtenido2 = res.restaValoresMetidos(numLeido);
@@ -69,5 +71,18 @@ public class RestaTest {
 		assertEquals(esperado1, obtenido1);
 		assertEquals(esperado2, obtenido2);
 	}
-
+	
+	// TEST DE CASOS RAROS
+	
+		@Test
+		public void elSegundoParametroSiEsNegativoHaraUnaSuma() {
+			Resta res = new Resta();
+			int numEnt1 = 5;
+			int numEnt2 = -5;
+			int esperado = 11;
+			int obtenido = res.restaDosEnteros(numEnt1, numEnt2);
+			assertEquals(esperado, obtenido);
+		}
+		
+		
 }
