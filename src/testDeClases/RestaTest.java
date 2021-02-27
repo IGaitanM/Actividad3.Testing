@@ -79,10 +79,48 @@ public class RestaTest {
 			Resta res = new Resta();
 			int numEnt1 = 5;
 			int numEnt2 = -5;
-			int esperado = 11;
+			int esperado = 10;
 			int obtenido = res.restaDosEnteros(numEnt1, numEnt2);
 			assertEquals(esperado, obtenido);
 		}
 		
+		@Test
+		public void siElSegundoParametroEsInfinitoNegativoElResltadoEsInfinitoPositivo() {
+			Resta res = new Resta();
+			double num1 = 5;
+			double num2 = Double.NEGATIVE_INFINITY;
+			double esperado = Double.POSITIVE_INFINITY;
+			double obtenido = res.restaDosReales(num1, num2);
+			assertEquals(esperado, obtenido);
+		}
 		
+		@Test
+		public void siUnParametroEsInfinitoPositivoElrestultaEsInfinitoPositivo() {
+			Resta res = new Resta();
+			double num1 = Double.POSITIVE_INFINITY;
+			double num2 = 5.2;
+			double esperado = Double.POSITIVE_INFINITY;
+			double obtenido = res.restaDosReales(num1, num2);
+			assertEquals(esperado, obtenido);
+		}
+		
+		@Test
+		public void siSeUsanDosParametrosInfinitosElResultadoEsNan() {
+			Resta res = new Resta();
+			double num1 = Double.POSITIVE_INFINITY;
+			double num2 = Double.POSITIVE_INFINITY;
+			double esperado = Double.NaN;
+			double obtenido = res.restaDosReales(num1, num2);
+			assertEquals(esperado, obtenido);
+		}
+		
+		@Test
+		public void siUnParametroEsNaNElResultadoEsNan() {
+			Resta res = new Resta();
+			double num1 = Double.NaN;
+			double num2 = 5.5;
+			double esperado = Double.NaN;
+			double obtenido = res.restaDosReales(num1, num2);
+			assertEquals(esperado, obtenido);
+		}
 }

@@ -15,6 +15,9 @@ public class Suma {
 	/**
 	 * Método para sumar dos números reales.
 	 * 
+	 * Casos especiales:
+	 * --Si uno de los numeros es negativo, se produce una resta.
+	 * 
 	 * @param numReal1 primer valor real para hacer la operción.
 	 * @param numReal2 segundo valor real para hacer la operación.
 	 * @return resultado devuelve la suma de los dos valores reales.

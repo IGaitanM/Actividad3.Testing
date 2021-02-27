@@ -11,7 +11,7 @@ import principal.Cociente;
 
 public class CocienteTest {
 
-	// Test para método dividirDosReales.
+			// Test para método dividirDosReales.
 			@Test
 			public void dividirDosReales() {
 				// 1. ARRANGED (preparar)
@@ -64,4 +64,32 @@ public class CocienteTest {
 				// 3. ASSERT (comprobar)
 				assertEquals(esperado, obtenido);
 			}
+			
+			// Test de Caso especial del método raiz.
+			@Test
+			public void raizConNegativeInfinityElResultadoNaN() {
+				// 1. ARRANGED (preparar)
+				Cociente cociente1 = new Cociente();
+				double num = Double.NEGATIVE_INFINITY;
+				double esperado = 0;
+				// 2. ACT (ejecutar)
+				double obtenido = cociente1.raiz(num);
+				// 3. ASSERT (comprobar)
+				assertEquals(esperado, obtenido);
+			}
+			
+			// Test de Caso especial del método dividirDosReales.
+			@Test
+			public void dividirDosRealesConMaxValueYMinValueResultadoInfinity() {
+				// 1. ARRANGED (preparar)
+				Cociente cociente1 = new Cociente();
+				double numReal1 = Double.MAX_VALUE;
+				double numReal2 = Double.MIN_VALUE;
+				double esperado = 0;
+				// 2. ACT (ejecutar)
+				double obtenido = cociente1.dividirDosReales(numReal1, numReal2);
+				// 3. ASSERT (comprobar)
+				assertEquals(esperado, obtenido);
+			}
+			
 }
