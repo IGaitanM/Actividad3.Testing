@@ -93,4 +93,55 @@ public class SumaTest {
 				assertEquals(esperado,obtenido);
 			}
 			
+			@Test
+			public void sumaDosRealesConUnInfinitoPositivo() {
+				// 1. ARRANGED (preparar)
+				Suma sum = new Suma();
+				double numReal1 = 2.5;
+				double numReal2 = Double.POSITIVE_INFINITY;
+				double esperado = Double.POSITIVE_INFINITY;
+				// 2. ACT (Ejecutar)
+				double obtenido = sum.sumaDosReales(numReal1, numReal2);
+				// 3. Assert (comprobar)
+				assertEquals(esperado, obtenido);
+			}
+			
+			@Test
+			public void sumaDosRealesConUnInfinitoNegativo() {
+				// 1. ARRANGED (preparar)
+				Suma sum = new Suma();
+				double numReal1 = 2.5;
+				double numReal2 = Double.NEGATIVE_INFINITY;
+				double esperado = Double.NEGATIVE_INFINITY;
+				// 2. ACT (Ejecutar)
+				double obtenido = sum.sumaDosReales(numReal1, numReal2);
+				// 3. Assert (comprobar)
+				assertEquals(esperado, obtenido);
+			}
+			
+			@Test
+			public void sumaDosRealesConInfinitoResultadoNaN() {
+				// 1. ARRANGED (preparar)
+				Suma sum = new Suma();
+				double numReal1 = Double.NEGATIVE_INFINITY;
+				double numReal2 = Double.POSITIVE_INFINITY;
+				double esperado = Double.NaN;
+				// 2. ACT (Ejecutar)
+				double obtenido = sum.sumaDosReales(numReal1, numReal2);
+				// 3. Assert (comprobar)
+				assertEquals(esperado, obtenido);
+			}
+			
+			@Test
+			public void sumaDosRealesConNaNyNumeroResultadoNaN() {
+				// 1. ARRANGED (preparar)
+				Suma sum = new Suma();
+				double numReal1 = 3.2;
+				double numReal2 = Double.NaN;
+				double esperado = Double.NaN;
+				// 2. ACT (Ejecutar)
+				double obtenido = sum.sumaDosReales(numReal1, numReal2);
+				// 3. Assert (comprobar)
+				assertEquals(esperado, obtenido);
+			}
 }
