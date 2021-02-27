@@ -9,6 +9,7 @@ package principal;
 public class Operaciones {
 	/**
 	 * Metodo para comprobar si un número es primo.
+	 * No existen numeros primos negativos.
 	 * @param numero valor entero para hacer la operación.
 	 * @return resultado devuelve si el numero es primo o no.
 	 */
