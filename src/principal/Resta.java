@@ -17,6 +17,13 @@ public class Resta {
  * @param numReal1 generamos un numero real
  * @param numReal2 generamos un numero real
  * @return nos devuelve la resta de los numeros reales
+ * 
+ * Si uno de los parámetros es infinito negativo el resultado es infinito positivo.
+ * Si uno de los parámetros es infinito positivo el resultado es infinito positivo.
+ * Si los dos parámetros son infinitos el resultado es NaN* (*Not a Number)
+ * Si uno de los parámetros es NaN* el resultado es NaN*
+ * 
+ * 
  */
 	public double restaDosReales(double numReal1, double numReal2) {
 	
