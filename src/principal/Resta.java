@@ -17,6 +17,16 @@ public class Resta {
  * @param numReal1 generamos un numero real
  * @param numReal2 generamos un numero real
  * @return nos devuelve la resta de los numeros reales
+ * 
+ * Casos Raros:
+ * 
+ * <ul>
+ * <li> Si uno de los parámetros es infinito negativo el resultado es infinito positivo.
+ * <li> Si uno de los parámetros es infinito positivo el resultado es infinito positivo.
+ * <li> Si los dos parámetros son infinitos el resultado es NaN* (*Not a Number)
+ * <li> Si uno de los parámetros es NaN* el resultado es NaN*
+ * 
+ * 
  */
 	public double restaDosReales(double numReal1, double numReal2) {
 	
@@ -31,7 +41,10 @@ public class Resta {
  * @param numEnt2 introducimos un numero real
  * @return La resta de los dos numeros reales
  * 
- * Si se realiza la resta con un numero negativo se produce una suma 
+ * Casos Raros:
+ * 
+ * <ul>
+ * <li> Si se realiza la resta con un numero negativo se produce una suma 
  * 
  */
 
@@ -48,6 +61,10 @@ public class Resta {
  * @param numReal2 generamos un numero real
  * @param numReal3 generamos un numero real
  * @return resultado de la resta
+ * 
+ * Casos Raros:
+ * 
+ * <ul>
  */
 	
 	public double restaTresReales(double numReal1, double numReal2, double numReal3) {
@@ -63,6 +80,11 @@ public class Resta {
  * @param numLeido
  * @return Devuelve la resta de los numeros acumulados.
  * EL primero numero acumulado es negativo
+ * 
+ * Casos Raros:
+ * 
+ * <ul>
+ * 
  */
 	
 	public int restaValoresMetidos(int numLeido) {
