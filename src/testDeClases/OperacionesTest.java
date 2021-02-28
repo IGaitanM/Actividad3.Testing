@@ -87,6 +87,32 @@ public class OperacionesTest {
 		assertEquals(esperado, obtenido);
 	}
 	
+	@Test
+	public void porcentajeInfinito() {
+		// 1. ARRANGED (preparar)
+		Operaciones op= new Operaciones();
+		double numero1 = Double.POSITIVE_INFINITY;
+		double numero2 = 15;
+		double esperado = Double.POSITIVE_INFINITY;;
+		// 2. ACT (Ejecutar)
+		double obtenido = op.porcentaje(numero1, numero2);
+		// 3. Assert (comprobar)
+		assertEquals(esperado, obtenido);
+	}
+	
+	
+	@Test
+	public void factorialCero() {
+		// 1. ARRANGED (preparar)
+		Operaciones op= new Operaciones();
+		int numero = 0;
+		int esperado = 1;
+		// 2. ACT (Ejecutar)
+		int obtenido = op.factorial(numero);
+		// 3. Assert (comprobar)
+		assertEquals(esperado, obtenido);
+	}
+
 }
 
 
