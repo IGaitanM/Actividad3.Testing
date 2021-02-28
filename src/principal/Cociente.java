@@ -16,6 +16,7 @@ public class Cociente {
 	 * @param numReal2 segundo valor real para hacer la operación que sea diferente a 0.
 
 	 * @return resultado devuelve la división de los dos valores reales. 
+	 * CASO ESPECIAL: Si uno de los parametros es MaxValue y otro es MinValue el resultado sera infinito
 	 */
 	public double dividirDosReales(double numReal1, double numReal2) {
 
@@ -55,6 +56,7 @@ public class Cociente {
 	 * 
 	 * @param num valor real para hacer la operación.
 	 * @return resultado devuelve la raíz de un número real.
+	 * CASO ESPECIAL: Si los parametros de la raiz son infintos el resultado sera NaN
 	 */
 
 	public double raiz (double num) {
