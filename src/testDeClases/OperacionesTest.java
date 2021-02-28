@@ -61,16 +61,32 @@ public class OperacionesTest {
 		assertEquals(esperado, obtenido);
 	}
 	
+	//TEST CASOS ESPECIALES
+	
 	@Test
 	public void numPrimoNegativo() {
 		// 1. ARRANGED (preparar)
 		Operaciones op= new Operaciones();
 		int numero = -3;
-		boolean esperado = true;
+		boolean esperado = false;
 		// 2. ACT (Ejecutar)
 		boolean obtenido = op.numPrimo(numero);
 		// 3. Assert (comprobar)
 		assertEquals(esperado, obtenido);
 	}
+	
+	@Test
+	public void numIesimoPrimoNegativo() {
+		// 1. ARRANGED (preparar)
+		Operaciones op= new Operaciones();
+		int numero = -10;
+		int esperado = -1;
+		// 2. ACT (Ejecutar)
+		int obtenido = op.numIesimoPrimo(numero);
+		// 3. Assert (comprobar)
+		assertEquals(esperado, obtenido);
+	}
+	
 }
+
 
