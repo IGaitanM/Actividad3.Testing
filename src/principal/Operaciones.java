@@ -9,7 +9,7 @@ package principal;
 public class Operaciones {
 	/**
 	 * Metodo para comprobar si un número es primo.
-	 * No existen numeros primos negativos.
+	 * No existen numeros primos negativos, asi que devuelve false para todos los numeros negativos..
 	 * @param numero valor entero para hacer la operación.
 	 * @return resultado devuelve si el numero es primo o no.
 	 */
@@ -28,7 +28,7 @@ public class Operaciones {
 		}	
 	/**
 	 * Método para obtener el i-ésimo número primo entero.
-	 * @param numero valor entero para hacer la operación. Meter valores por encima de 0. 
+	 * @param numero valor entero para hacer la operación. Meter valores por encima de 0, las posiciones negativas no tienen sentido. 
 	 * (Números muy altos incrementan el tiempo de la operación).
 	 * @return resultado devuelve i-ésimo numero primo correspondiente al número metido.
 	 */
@@ -59,6 +59,7 @@ public class Operaciones {
 }
 	/**
 	 * Método obtener el porcentaje de un numero real.
+	 * Un porcentaje de infinito sigue siendo infinito.
 	 * @param numReal1 primer valor real para hacer la operación.
 	 * @param numReal2 segundo valor real para hacer la operación.
 	 * @return resultado devuelve el porcentaje del numero 1 respecto del número 2.
@@ -71,6 +72,7 @@ public class Operaciones {
 	/**
 	 * Método obtener el factorial de un número.
 	 * @param num sobre el que se obtiene el factorial. 
+	 * El factorial de 0 es 1.
 	 * (Números muy altos incrementan el tiempo de la operación). 
 	 * No puede obtener factoriales de numeros negativos ni decimales.
 	 * @return resultado devuelve el factorial del número.
