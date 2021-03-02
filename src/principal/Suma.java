@@ -15,12 +15,18 @@ public class Suma {
 	/**
 	 * Método para sumar dos números reales.
 	 * 
-	 * Casos especiales:
-	 * --Si uno de los numeros es negativo, se produce una resta.
-	 * 
 	 * @param numReal1 primer valor real para hacer la operción.
 	 * @param numReal2 segundo valor real para hacer la operación.
 	 * @return resultado devuelve la suma de los dos valores reales.
+	 * 
+	 * Casos especiales:
+	 * 
+	 * <ul>
+	 * <li> Si uno de los numeros reales es negativo, se produce una resta.
+	 * <li> Si uno de los numeros reales es infinito positivo el resultado es infinito positivo.
+	 * <li> Si uno de los numeros reales es infinito negativo el resultado es infinito negativo.
+	 * <li> Si un numero real es infinito negativo, y el otro es infinito positivo, se obtiene NaN (Not a Number).
+	 * <li> Si un numero real es NaN, el resultado obtenido es NaN.
 	 */
 	
 	public double sumaDosReales(double numReal1, double numReal2) {
