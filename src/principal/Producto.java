@@ -22,6 +22,7 @@ public class Producto {
 	 * <li> Si multiplicamos infinito positivo por infinito negativo, el resultado será infinito negativo
 	 * <li> La multiplicación entre un número normal y un infinito negativo dará como resultado infinito negativo.
 	 * <li> Multiplicar 0 por NaN dará como resultado NaN.
+	 * <ul>
 	 */
 
 	public double multiplicacionDosReales(double numReal1, double numReal2) {
@@ -36,7 +37,13 @@ public class Producto {
 	 * @param numEnt1 primer valor real para hacer la operación.
 	 * @param numEnt2 segundo valor real para hacer la operación.
 	 * @return resultado devuelve la multiplicacion de los dos valores reales.<ul>
-	 * CASOS RAROS:
+	 * * CASOS RAROS:
+	 * <ul>
+	 * <li> Si un parámetro es NaN el resultado será NaN.
+	 * <li> Si multiplicamos dos infinitos positivos el resultado será NaN.
+	 * <li> Si multiplicamos infinito positivo por infinito negativo, el resultado será infinito negativo
+	 * <li> La multiplicación entre un número normal y un infinito negativo dará como resultado infinito negativo.
+	 * <li> Multiplicar 0 por NaN dará como resultado NaN.
 	 * <ul>
 	 *
 	 */
@@ -61,6 +68,7 @@ public class Producto {
 	 * <li> Si multiplicamos infinito positivo por infinito negativo, el resultado será infinito negativo.
 	 * <li> La multiplicación entre dos números normales y un infinito negativo dará como resultado infinito negativo.
 	 * <li> Multiplicar 0 por NaN dará como resultado NaN.
+	 * <ul>
 	 */
 	public double multiplicacionTresReales(double numReal1, double numReal2, double numReal3) {
 
@@ -83,6 +91,7 @@ public class Producto {
 	 * <li> Si la base es 1 y el exponente MAX_VALUE, el resultado es 1 
 	 * <li> Usar un numero negativo en el exponente dará como resultado NaN
 	 * <li> La potencia de exponente un número negativo dará de resultado NaN
+	 * <ul>
 	 */
 
 	public int potencia(int base, int exponente) {
