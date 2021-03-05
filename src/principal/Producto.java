@@ -85,7 +85,7 @@ public class Producto {
 	 * *  CASOS RAROS:
 	 * <ul>
 	 * <li> Usar 0 de base dara de resultado 0
-	 * <li> Usar 0 de base y 0 de exponente dará NaN
+	 * <li> Usar 0 de base y 0 de exponente dará 1.
 	 * <li> Usar 0 de exponente dará como resultado NaN
 	 * <li> Si la base es MIN_VALUE y el Exponente MAX_VALUE el resultado es MIN_VALUE
 	 * <li> Si la base es 1 y el exponente MAX_VALUE, el resultado es 1 
